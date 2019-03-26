@@ -1,4 +1,4 @@
-package ca.ualberta.cs.lonelytwitter;
+package ca.ualberta.cs.lonelytwitterRefactored;
 
 import java.util.Date;
 import java.util.List;
@@ -55,9 +55,9 @@ public class LonelyTwitterActivity extends Activity {
 //			tweet = new ImportantLonelyTweet(text);
 //		} else {
 //			tweet = new NormalLonelyTweet(text);
-//		}
+//		}isValidBody
 		
-		if (tweet.isValid()) {
+		if (tweet.isValidBody()) {
 			tweets.add(tweet);
 			adapter.notifyDataSetChanged();
 
